@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HackVerse 2026 | GDG On Campus</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="tech-sidebar">
+    <a href="https://cloud.google.com" target="_blank" title="Google Cloud">
+      <img src="images/icons/gcloud.svg" alt="Google Cloud">
+    </a>
+
+    <a href="https://www.tensorflow.org" target="_blank" title="Android">
+      <img src="images/icons/tensorflow.svg" alt="TensorFlow">
+    </a>
+
+    <a href="https://firebase.google.com" target="_blank" title="Firebase">
+      <img src="images/icons/firebase.svg" alt="Firebase">
+    </a>
+
+    <a href="https://flutter.dev" target="_blank" title="Flutter">
+      <img src="images/icons/flutter.svg" alt="Flutter">
+    </a>
+
+    <a href="https://developer.android.com" target="_blank" title="Android">
+      <img src="images/icons/android.svg" alt="Android">
+    </a>
+
+    <a href="https://git-scm.com" target="_blank" title="Git">
+      <img src="images/icons/git.svg" alt="Git">
+    </a>
+
+    <a href="https://github.com" target="_blank" title="GitHub">
+      <img src="images/icons/github.svg" alt="GitHub">
+    </a>
+  </div>
+
+  <!-- Mobile Tech Sidebar Toggle -->
+  <div class="mobile-tech-toggle" id="mobileTechToggle">
+    <img src="images/icons/menu_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg" alt="Tech" id="mobileTechIcon">
+  </div>
+
+  <div class="mobile-tech-dropdown" id="mobileTechDropdown">
+    <a href="https://cloud.google.com" target="_blank" title="Google Cloud">
+      <img src="images/icons/gcloud.svg" alt="Google Cloud">
+    </a>
+
+    <a href="https://www.tensorflow.org" target="_blank" title="TensorFlow">
+      <img src="images/icons/tensorflow.svg" alt="TensorFlow">
+    </a>
+
+    <a href="https://firebase.google.com" target="_blank" title="Firebase">
+      <img src="images/icons/firebase.svg" alt="Firebase">
+    </a>
+
+    <a href="https://flutter.dev" target="_blank" title="Flutter">
+      <img src="images/icons/flutter.svg" alt="Flutter">
+    </a>
+
+    <a href="https://developer.android.com" target="_blank" title="Android">
+      <img src="images/icons/android.svg" alt="Android">
+    </a>
+
+    <a href="https://git-scm.com" target="_blank" title="Git">
+      <img src="images/icons/git.svg" alt="Git">
+    </a>
+
+    <a href="https://github.com" target="_blank" title="GitHub">
+      <img src="images/icons/github.svg" alt="GitHub">
+    </a>
+  </div>
+  -
+  <header>
+    <div class="logo-wrap">
+      <img src="images/logos/hackverselogo.jpeg" alt="HackVerse 2026" class="logo-img" />
+      <span class="logo-tagline">
+        An Open Innovation Hackathon...
+      </span>
+    </div>
+
+    <nav>
+
+      <a href="#about" class="nav-blue n">About</a>
+      <a href="#overview" class="nav-red n">Overview</a>
+      <a href="#timeline" class="nav-yellow n">Timeline</a>
+      <a href="#prizes" class="nav-green n">Prizes</a>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNR-YkIOc5JUc5HAo-DsLrtlubD1XKi_QMIYJpbyNQFUa9gQ/viewform?usp=sharing&ouid=102850845596703448837"
+        target="_blank" class="btn-primary">Register Now</a>
+    </nav>
+
+
+  </header>
+  <section class="hero">
+    <div class="shape blue"></div>
+    <div class="shape green"></div>
+    <div class="shape yellow"></div>
+    <h1 class="hero-title">
+      <div class="gdg-row">
+        <!-- INLINE SVG -->
+        <!-- <span class="gdg-main">GDG</span> -->
+        <img src="images/logos/gdglogo-removebg-preview.png" width="200px" height="100px" class="mr"><img
+          src="images/logos/halflogo.png" width="200px" height="100px" class="mr">
+      </div>
+
+      <span class="gdg-sub" id="typing"></span><br>
+      <span class="highlight">HackVerse 2026</span>
+    </h1>
+
+
+
+    <p class="tagline">Create. Innovate. Impact.</p>
+
+    <div class="meta">
+      <span>📅 08 Jan 2026</span>
+      <span>📍 SVREC</span>
+    </div>
+
+
+    <div class="countdown">
+      <p>Event starts in</p>
+      <div class="timer" id="timer"></div>
+    </div>
+
+    <div class="actions">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNR-YkIOc5JUc5HAo-DsLrtlubD1XKi_QMIYJpbyNQFUa9gQ/viewform?usp=sharing&ouid=102850845596703448837"
+        target="_blank" class="btn-primary bm">Register Now →</a>
+      <a href="#about" class="btn-secondary bm">Learn More</a>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="reveal" style="padding:100px 8%; text-align:center;">
+    <small style="color:var(--blue);font-weight:600;">About the Event</small>
+    <h2 style="margin:12px 0;">What is HackVerse?</h2>
+    <p style="max-width:700px;margin:0 auto 60px;color:var(--muted);">
+      HackVerse 2026 is a one-day open innovation hackathon organized by GDG On Campus, bringing together students from
+      CSE, CSE-AI, and ECE to ideate, build, and present impactful technology solutions. Participants are encouraged to
+      leverage Google-powered tools and platforms such as Google Cloud, Firebase, Android, and web technologies to solve
+      real-world problems through collaboration and innovation.
+    </p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;">
+      <div class="time-box">
+        <h3>Build & Create</h3>
+        <p>Bring ideas to life using modern technologies</p>
+      </div>
+      <div class="time-box">
+        <h3>Collaborate</h3>
+        <p>Work with talented peers across domains</p>
+      </div>
+      <div class="time-box">
+        <h3>Learn & Grow</h3>
+        <p>Mentorship and hands-on learning experience</p>
+      </div>
+      <div class="time-box">
+        <h3>Win Prizes</h3>
+        <p>Earn recognition, prizes, and certificates</p>
+      </div>
+    </div>
+  </section>
+  <!-- ================= HACKATHON OVERVIEW (STYLED POINTS) ================= -->
+  <section id="overview" class="reveal overview-section">
+    <small class="section-label" style="text-align:center;">Hackathon Overview</small>
+    <h2 class="section-title">One-Day Open Innovation</h2>
+
+    <p class="section-desc">
+      HackVerse 2026 follows a one-day open innovation format where participants are free
+      to choose their problem statements and technology stacks, while adhering to the
+      following guidelines:
+    </p>
+
+    <ul class="overview-points animated-points">
+      <li style="--delay:0s">
+        <span class="point-icon">🚀</span>
+        <div>
+          <h4>Open Innovation</h4>
+          <p>
+            Teams may work on any domain or problem statement of their choice with complete
+            freedom in selecting technologies.
+          </p>
+        </div>
+      </li>
+
+      <li style="--delay:0.1s">
+        <span class="point-icon">🛠</span>
+        <div>
+          <h4>Google Developer Tools</h4>
+          <p>
+            Each team must incorporate at least one Google-related technology such as
+            Google Cloud, Firebase, Android, or Web tools.
+          </p>
+        </div>
+      </li>
+
+      <li style="--delay:0.2s">
+        <span class="point-icon">👥</span>
+        <div>
+          <h4>Team Size</h4>
+          <p>
+            Teams can consist of a minimum of <strong>1</strong> member and a maximum of
+            <strong>4</strong> members.
+          </p>
+        </div>
+      </li>
+
+      <li style="--delay:0.3s">
+        <span class="point-icon">⏱</span>
+        <div>
+          <h4>One-Day Hackathon</h4>
+          <p>
+            All ideation, development, and final presentations must be completed within
+            the given one-day time frame.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <!-- ================= TIMELINE ================= -->
+  <section id="timeline" class="reveal" style="padding:120px 8%; background:#f8fafc;">
+    <div style="text-align:center;margin-bottom:80px;">
+      <small style="color:var(--blue);font-weight:600;">Event Schedule</small>
+      <h2>Timeline & Key Dates</h2>
+      <p style="color:var(--muted);max-width:600px;margin:12px auto 0;">
+        Mark your calendars! Here's everything you need to know about the hackathon journey.
+      </p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-line"></div>
+
+      <div class="timeline-item left">
+        <span class="dot blue"></span>
+        <div class="timeline-card">
+          <small>Jan 03</small>
+          <h3>Registration Opens</h3>
+          <p>Sign up early to secure your spot</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <span class="dot red"></span>
+        <div class="timeline-card">
+          <small>Jan 5</small>
+          <h3>Registration Closes</h3>
+          <p>Last day to register for the event</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <span class="dot yellow"></span>
+        <div class="timeline-card">
+          <small>Jan 8 : 9:30 AM</small>
+          <h3>Opening Ceremony</h3>
+          <p>Kickoff, team formation & problem statements</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <span class="dot green"></span>
+        <div class="timeline-card">
+          <small>Jan 8 : 10:00 AM</small>
+          <h3>Hacking Begins</h3>
+          <p>Start building your innovative solutions</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <span class="dot blue"></span>
+        <div class="timeline-card">
+          <small>Jan 8: 4:30 PM </small>
+          <h3>Closing Ceremony & Wind-Up</h3>
+          <p>Project wrap-up, feedback, and closing remarks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRIZES ================= -->
+  <section id="prizes" class="reveal" style="padding:100px 8%; text-align:center;">
+    <small style="color:var(--blue);font-weight:600;">Rewards</small>
+    <h2>Prizes & Recognition</h2>
+    <p style="color:var(--muted);margin-bottom:60px;">Win prizes, certificates, and recognition</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px;">
+      <div class="time-box">
+        <h3>🥇 1st Place</h3>
+        <h2>₹2,500</h2>
+        <p>Cash Prize</p>
+      </div>
+      <div class="time-box">
+        <h3>🥈 2nd Place</h3>
+        <h2>₹1,500</h2>
+        <p>Cash Prize</p>
+      </div>
+      <div class="time-box">
+        <h3>🥉 3rd Place</h3>
+        <h2>₹1,000</h2>
+        <p>Cash Prize</p>
+      </div>
+    </div>
+  </section>
+  <!-- ================= SPONSORS ================= -->
+  <section id="sponsors" class="reveal" style="padding:100px 8%; text-align:center;">
+    <small style="color:var(--blue);font-weight:600;">Our Partners</small>
+    <h2>Sponsors</h2>
+    <p style="color:var(--muted);margin-bottom:50px;">
+      Proudly supported by our sponsors
+    </p>
+
+    <div class="sponsor-grid two">
+      <div class="sponsor-card">
+        <img src="images/logos/clglogo2.jpg" alt="Sponsor 1"><br>
+        <h3>SVREC</h3>
+      </div>
+      <div class="sponsor-card">
+        <img src="images/logos/gitslogo.jpeg" style="width:100px" alt="Sponsor 2">
+      </div>
+    </div>
+  </section>
+  <!-- ================= CORE TEAM ================= -->
+  <!-- ================= CORE TEAM ================= -->
+  <section id="team" class="reveal team-section">
+    <small class="section-label">Meet the Team</small>
+    <h2 class="section-title">HackVerse Organizing Team</h2>
+
+    <p class="section-desc">
+      The student leaders and core members behind HackVerse 2026.
+    </p>
+
+    <!-- LEAD -->
+    <div class="team-lead">
+      <div class="team-card lead">
+        <div class="team-avatar">
+          <img src="images/mem/sirishalead.jpeg" alt="">
+        </div>
+        <h3>K.Naga Sirisha</h3>
+        <p class="role">GDG On Campus Lead</p>
+      </div>
+    </div>
+
+    <!-- CORE TEAM (SINGLE LINE) -->
+    <div class="team-core-row">
+      <div class="team-card">
+        <div class="team-avatar"><img src="images/mem/vasanth.jpg"></div>
+        <h3>A.Vasanth</h3>
+        <p class="role">Technical Core</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar"><img src="images/mem/basava.jpeg"></div>
+        <h3>Basavaraju</h3>
+        <p class="role">Design & Media</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar"><img src="images/mem/rajeshpic.jpeg"></div>
+        <h3>U.Rajesh</h3>
+        <p class="role"> Event&Operations</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar"><img src="images/mem/hariteja.jpeg"></div>
+        <h3>HariTeja</h3>
+        <p class="role">Marketing & Communications</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar"><img src="images/mem/swathi.jpeg"></div>
+        <h3>Swathi</h3>
+        <p class="role">Community Manager</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= REGISTER ================= -->
+  <section id="register" class="reveal" style="padding:100px 8%;text-align:center;">
+    <h2>Ready to Build at HackVerse 2026?</h2>
+    <p style="color:var(--muted);margin:20px 0;">One-day hackathon · CSE · CSE-AI · ECE</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNR-YkIOc5JUc5HAo-DsLrtlubD1XKi_QMIYJpbyNQFUa9gQ/viewform?usp=sharing&ouid=102850845596703448837"
+      target="_blank" class="btn-primary">Register Now</a>
+  </section>
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-left">
+        <h1 class="hackverse-gradient">HackVerse 2026</h1>
+        <p>
+          An Open Innovation Hackathon by<br>
+          <strong>GDG On Campus – SVR Engineering College</strong>
+        </p>
+      </div>
+
+      <div class="footer-right">
+        <h4>Contact Us</h4>
+        <p>
+          📧 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gdg@svrec.ac.in" target="_blank">
+            gdg@svrec.ac.in
+          </a>
+
+        </p>
+        <p>
+          📍 SVR Engineering College, Nandyal
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 HackVerse | Powered by GDG On Campus
+    </div>
+  </footer>
+
+  <script>
+
+    // Ensure animations run after page load
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+    const targetDate = new Date('2026-01-08T09:00:00').getTime();
+    const timer = document.getElementById('timer');
+
+    function updateTimer() {
+      const now = new Date().getTime();
+      const diff = targetDate - now;
+
+      if (diff <= 0) {
+        timer.innerHTML = '<strong>Event Started!</strong>';
+        return;
+      }
+
+
+
+      const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const m = Math.floor((diff / (1000 * 60)) % 60);
+      const s = Math.floor((diff / 1000) % 60);
+
+      timer.innerHTML = `
+      <div class="time-box"><h2>${d}</h2><span>Days</span></div>
+      <div class="time-box"><h2>${h}</h2><span>Hours</span></div>
+      <div class="time-box"><h2>${m}</h2><span>Minutes</span></div>
+      <div class="time-box"><h2>${s}</h2><span>Seconds</span></div>
+    `;
+    }
+
+    // ================= TYPING ANIMATION =================
+    const text = "Google Developer Groups On Campus";
+    const el = document.getElementById("typing");
+
+    let index = 0;
+
+    function type() {
+      if (index < text.length) {
+        el.textContent += text.charAt(index);
+        index++;
+        setTimeout(type, 80);
+      } else {
+        el.style.borderRight = "none"; // optional cursor stop
+      }
+    }
+
+    // Run typing ONCE
+    type();
+
+    setInterval(updateTimer, 1000);
+    updateTimer();
+
+    // ================= SCROLL REVEAL =================
+    const reveals = document.querySelectorAll('.reveal');
+
+    function revealOnScroll() {
+      const windowHeight = window.innerHeight;
+      reveals.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        const revealPoint = 120;
+
+        if (elementTop < windowHeight - revealPoint) {
+          el.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+
+    // ================= TIMELINE SCROLL ANIMATION =================
+    const timelineItems = document.querySelectorAll('.timeline-item');
+
+    function revealTimeline() {
+      const trigger = window.innerHeight * 0.85;
+      timelineItems.forEach(item => {
+        const top = item.getBoundingClientRect().top;
+        if (top < trigger) {
+          item.classList.add('show');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealTimeline);
+    revealTimeline();
+    // ================= MOBILE TECH SIDEBAR =================
+    const mobileToggle = document.getElementById('mobileTechToggle');
+    const mobileDropdown = document.getElementById('mobileTechDropdown');
+
+    if (mobileToggle) {
+      mobileToggle.addEventListener('click', () => {
+        mobileDropdown.classList.toggle('active');
+        // Optional: Animate the toggler
+        mobileToggle.style.transform = mobileDropdown.classList.contains('active')
+          ? 'rotate(360deg)'
+          : 'rotate(0deg)';
+      });
+
+      // Close when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!mobileToggle.contains(e.target) && !mobileDropdown.contains(e.target)) {
+          mobileDropdown.classList.remove('active');
+          mobileToggle.style.transform = 'rotate(0deg)';
+        }
+      });
+    }
+
+  </script>
+
+
+</body>
+
+</html>
